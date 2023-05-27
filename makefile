@@ -8,7 +8,7 @@ runSelection: selection
 	  ./selection
 
 run: bubble
-	 ./bubble
+	 ./bubble 5 6 7 3 2
 
 
 clean: bubble
