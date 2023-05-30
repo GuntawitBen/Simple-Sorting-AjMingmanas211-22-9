@@ -1,15 +1,20 @@
-compile: main.cpp 
-	 g++  main.cpp -o bubble
+compilebubble: mainbubble.cpp 
+	 g++  mainbubble.cpp -o bubble
 
-compileSelection: main_selection.cpp 
-	 g++  main_selection.cpp -o selection
+compileinsertion: maininsertion.cpp 
+	 g++  maininsertion.cpp -o insertion
 
-runSelection: selection
-	  ./selection
+compileselection: mainselection.cpp 
+	 g++  mainselection.cpp -o selection
 
-run: bubble
-	 ./bubble 5 6 7 3 2
+runbubble: bubble
+	./bubble 1 3 4 5 7 6 2
 
+runinsertion: insertion
+	./insertion 1 3 4 5 7 6 2
+
+runselection: selection
+	./selection 1 3 4 5 7 6 2
 
 clean: bubble
 	 rm bubble

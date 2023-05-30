@@ -11,12 +11,5 @@ int main(int argc,char ** argv) {
 
 
   display(a,N);
-  //bubbleSort(a,N); 
-  //selectionSort(a,N);
-   insertion(a,N);
-
-  // selectionSort(a,N);
-   display(a,N);
+  insertion(a,N);
 }
-
-// new number =2 
